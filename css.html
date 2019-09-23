@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+        <style>
+        b{
+            /*요소 선택자*/
+            color: yellowgreen;
+        }
+        .c_name{
+            /*클래스 선택자*/
+            color: skyblue;
+        }
+        #i_name{
+            /*아이디 선택자*/
+            color: palevioletred;
+        }
+        #i_name2::before{ content: "🔆"; } 
+        #i_name2::after{ content: "🔆"; } 
+        #i_name2::first-letter{ font-size: 60px} 
+        #i_name2::first-line{ color: tomato;} 
+
+        .con:first-child{ color: olive; }
+        .con:last-child{ color: indianred; }
+        .con:nth-child(4){ color: cornflowerblue; }
+        </style>
+    </head>
+    <body>
+        <b>내용1</b>
+        <!-- calss : 여러명이 나눠쓸 수 있음
+             id : 하나의 요소, 중복x -->
+        <div class="c_name">클래스</div>
+        <div id="i_name">아이디</div>
+
+        <div id="i_name2">가상요소 선택자 가상요소 선택자 가상요소 선택자 가상요소 선택자 가상요소 선택자 가상요소 선택자 </div>
+
+        <ul>
+            <li class="con">내용</li>
+            <li class="con">내용2</li>
+            <li class="con">내용3</li>
+            <li class="con">내용4</li>
+            <li class="con">내용4.1</li>
+            <li class="con">내용5</li>
+        </ul>
+
+        <style>
+        /* :link 기본, :visited 방문함, :hover 마우스 올림, :active 활성화 됨, :focus 포커스 됨*/
+        a:link{
+            color: black;
+            text-decoration: none;
+        }
+        a:visited{ color: aqua; }
+        a:hover{ color: red; }
+        a:active{ color: yellowgreen; }
+        a:focus{ color: tomato; }
+        </style>
+        <a href="#">링크버튼</a>
+    
+    </body>
+</html>

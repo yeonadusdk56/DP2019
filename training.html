@@ -13,18 +13,12 @@
         h2{
             color: pink;
         }
-        a{
-
-        }
-        table{
-
-        }
         .class_name{
-            /* .class */
+            /* .class 중복가능 */
             color: gray;
         }
         #id_name{
-            /* #id */
+            /* #id 중복불가 */
             color: violet;
         }
         *{
@@ -153,5 +147,43 @@
     <!-- span 구획 구분 (라인형) -->
     <span>내용</span>
     <!-- 의미없이 사용하는 경우가 많음 -->
+
+    <!-- form 양식지 -->
+    <form>
+        <input type="text" placeholder="아이디를 입력해 주세요"/>
+        <input type="password" placeholder="패스워드를 입력해 주세요"/>
+        <!-- radio는 name이 중요함, 같은 라디오는 같은 name -->
+        <!-- 반드시 다른 문항과 같이 있어야 선택이 취소됨(다른게 선택됨) -->
+        <input type="radio" name="btl" value="1">
+        <input type="radio" name="btl" value="2">
+        <input type="radio" name="btl" value="3">
+
+        <input type="radio" name="btl2" value="1">
+        <input type="radio" name="btl2" value="2">
+        <input type="radio" name="btl2" value="3">
+
+        <input type="checkbox" checked/>
+        <input type="checkbox"/>
+        <input type="checkbox"/>
+
+        <!-- 선택박스, 콤보박스 -->
+        <!-- 선택할 수 있는 보기 제시, 직접작성 실수를 방지 -->
+        <select>
+            <option>웹사이트</option>
+            <option>www.naver.com</option>
+            <option>www.google.com</option>
+        </select>
+
+        <!-- 여러줄의 문자열을 받음, cols(가로 글자수), rows(세로 줄수) -->
+        <textarea cols="30" rows="5">
+
+        </textarea>
+        <input type="button" value="버튼">
+        <input type="button" value="테스트 버튼" onclick="alert('테스트 버튼이 눌렸습니다.');"/>
+
+        <!-- 제출버튼 -->
+        <input type="submit" value="제출" />
+
+    </form>
     </body>
 </html>
