@@ -55,6 +55,159 @@
         a:focus{ color: tomato; }
         </style>
         <a href="#">링크버튼</a>
+        <style>
+            #boxmodell{
+                background-color: #dddddd;
+                width: 100px;
+                height: 200px;
+                margin: 100px; /* 바깥여백 */
+                padding: 100px; /* 인쪽여백 */
+                border: solid 1px black; /* 경계 */
+                /* 경계: 선종류 선두께 선색깔 */
+            }
+        
+        </style>
+
+        <div id="boxmodell">박스모델1</div>
+        인라인태그
+
+        <style>
+            /* 하위 요소 선택자 , 듸어쓰기 */
+            div li{
+                color: coral;
+            }
+            /* 자식 요소 선택자, > 부등호 기호 */
+            div>ul>li{
+                text-decoration: underline;
+            }
+            /* 선택자 그룹화, 쉼표(,) */
+            div,ul,li{
+                color: blueviolet;
+                /* 16진수, 0~9-A~F */
+                color: #000; /* 3자리 컬러코드 #rgb */
+                color: #000000; /* 6자리 컬러코드 #rrggbb */ 
+                color: rgb(0,0,255); /* 0~255 */
+                color: rgb(0%,0%,100%); /* 0%~100% */
+            }
+        
+        </style>
+        <div style="color: blue;">
+            container
+            <ul>
+               <li>리스트1</li>
+               <li>리스트2</li>
+               <li>리스트3</li>
+               <li>리스트4</li>
+            </ul>
+        </div>
+
+        <style>
+            .position_test{
+                background-color: #ddd;
+                /* static 정적인(기본)*/
+                position: static;
+                /* absolute 절대적인 */
+                /* top, left, right, bottom 위치 조종 가능 */
+                position: absolute;
+                top: 110px;
+                left: 100px;
+                /* fixed 고정된 */
+                position: fixed;
+        }
+        </style>
+        <div class="position_test">
+            position_test
+        </div>
+
+        <style>
+            .font_test{
+                font-family: "Andale Mono", Cochin, "굴림", Gulim, sans-serif;
+                /* small, large, medium*/
+                font-size: 10px;
+                /* nomal, bold, bolder */
+                /* 내가 사용한 폰트가 볼드가 없다면 변화가 없을수도 있음*/
+                font-weight: bolder;
+                /* normal, italic, oblique*/
+                font-style: italic;
+                /* nomal, small-caps, */
+                font-variant: small-caps;
+                /* lift, center, right */
+                /* inline 요소에만 적용됨 */
+                text-align: center;
+
+                height: 150px;
+                background-color: #ddd;
+
+                /* none, underline, overline, line-through */
+                text-decoration: underline;
+            }
+        </style>
+
+        <div class="font_test">
+                <span>AbcDeFgHIjKlMNoP</span>
+                container
+                font_test
+                <img width="50px" src="images/toystory.jpeg">
+        </div>
+
+        <style>
+            .letter_line{
+                /* 글자 사이의 간격 */
+                letter-spacing: 10px;
+                /* 줄 간격 */
+                line-height: 30px;
+                /* 들여쓰기 */ 
+                text-indent: 50px;
+            }
+        </style>
+
+        <div class="letter_line">
+            latter_line
+            한땀, 한 땀 정성을 다해 만든 귀엽고 앙증맞은 펠트 인형들이 시선을 모으고 있다.
+            영국의 펠트 아티스트 ‘시몬 브라운(Simon Brown)’은 양모로 만든 펠트 직물을 이용해 세상에 없는 깜찍한 동물 인형들을 만들어 많은 이들의 사랑을 받고 있다.
+            동물 털에 습기, 열, 압력을 가해 압축시킨 직물인 펠트는 우수한 보온성으로 다양한 의류에 사용되기도 하지만 
+            특유의 부드러움과 유연함으로 장난감, 인형 등 각종 공예품의 원료로도 흔히 사용되고 있다.
+        </div>
+
+        <style>
+            .text_transform{
+                /* none : 일반
+                   UPPERCASE : 대문자로
+                   lowercase : 소문자로 
+                   Capitalize : 첫글자 대문자 */
+                text-transform: lowercase;
+            }
+        </style>
+        <div class="text_transform">
+            AbcDeFgHIjKlMNoP
+        </div>
+
+        <style>
+            .pre{
+                white-space: pre;
+        }
+        </style>
+        <!-- &nbsp;띄어쓰기, <br/>줄내림 -->
+        <!-- pre쓰는 이유 : 입력한 그대로를 보여주기 위해서 -->
+        <div class="pre">
+            1 2 3       4 5 6
+            7 8 9 0
+        </div>
+
+        <style>
+            @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+            @import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+            /* import url 들여오기 주소 */
+            .google_font{
+                font-family: 'Nanum Pen Script', cursive;
+                /* import후 들여오기 된 폰트의 이름을 명시하여 사용함 */
+                font-family: 'Nanum Pen Script', cursive;
+            }
+        </style>
+
+        <div class="google_font">
+            google_font
+        </div>
     
     </body>
 </html>
