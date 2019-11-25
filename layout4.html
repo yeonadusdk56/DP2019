@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layout4</title>
+        <meta charset="utf-8" />
+        <style>
+            body{
+                background-image: url("images/배경_01.jpg")
+            }
+            header>a{
+                float: left;
+            }
+            .float_left{
+                float: left;
+                margin: 0px;
+                color: rgba(0, 0, 0, 0.753);
+            }
+            .float_left>div{
+                float: left;
+                padding-top: 14px;
+            }
+
+            .float_left>div:nth-child(2){
+                color: rgba(255, 255, 255, 0.753);
+            }
+            header>nav{
+                float: right;
+                padding-top: 3px;
+                padding-right: 20px;
+                color: rgba(255, 255, 255, 0.801);
+            }
+            header>nav>ul>li{
+                float: left;
+                list-style: none;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-right: solid 2px rgba(255, 255, 255, 0.445)
+            }           
+        </style>
+    </head>
+    <body>
+        <header>
+            <a>
+                <img src="images/토토로.png"/>
+            </a>
+            <h2 class="float_left">
+                <div>STUDIO</div><div>GHIBRI</div>
+            </h2>
+            <nav>
+                <ul>
+                    <li>LAYOUT1</li>
+                    <li>LAYOUT2</li>
+                    <li>LAYOUT3</li>
+                    <li>Character</li>
+                    <li>Photo</li>
+                    <li>Ost</li>
+                    <div class="clear"></div>
+                </ul>
+            </nav>
+        </header>
+
+    </body>
+   <footer>
+
+   </footer>
+</html>
