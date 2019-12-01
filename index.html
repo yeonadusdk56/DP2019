@@ -1,25 +1,141 @@
 <!DOCTYPE HTML>
 <html>
-    hello world 2019221031 김연아<br/>
     <head>
         <title>디지털 퍼블리싱2 사이트</title>
         <meta charset="utf-8" />
         <!--eur-kr, utf-8
         = utf-8로 입력된 문서이다 (한글깨짐 방지)-->
         <meta name="keywords" content="김연아" />
-        <style></style>
+        <style>
+            .clear {clear: both; height: 0; overflow: hidden;}
+            body{
+                background-color: rgb(22, 157, 235);
+                padding: 0px;
+            }
+            header>a{
+                float: left;
+                position: relative;
+                top: 13px;
+                left: 10px;
+            }
+            .float_left{
+                float: left;
+                margin: 0px;
+                color: rgba(0, 0, 0, 0.753);
+            }
+            .float_left>div{
+                float: left;
+                position: relative;
+                top: 25px;
+                left: 12px;
+                font-size: 30px;
+            }
+
+            .float_left>div:nth-child(2){
+                color: rgba(255, 255, 255, 0.753);
+            }
+            header>nav{
+                float: right;
+                padding-top: 3px;
+                padding-right: 40px;
+                color: rgba(255, 255, 255, 0.801);
+            }
+            header>nav{
+                padding-top: 12px;
+                font-size: 20px;
+            }
+            header>nav>ul>li{
+                float: left;
+                list-style: none;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-right: solid 2px rgba(255, 255, 255, 0.445);
+            }     
+            header>nav>ul>li>a{
+                text-decoration: none;
+                color: rgba(255, 255, 255, 0.801);
+            }
+
+            #totoro{
+                float: right;
+                position: relative;
+                top: 100px;
+                left: 70px;
+            }
+
+            footer{
+                color: rgba(255, 255, 255, 0.801);
+            }
+            footer ul{
+              padding: 0px;
+            }
+            #footer_div{ float: left; }
+            #footer1>li>a{
+                text-decoration: none;
+                color: rgba(255, 255, 255, 0.801);
+            }
+            #footer1>li{
+                float: left;
+                list-style: none;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-right: solid 2px rgba(255, 255, 255, 0.445);
+            }
+            footer>div>p{
+                padding: 10px;
+                line-height: 30px;
+            }
+            footer{
+                float: left;
+                position: relative;
+                top: 115px;
+                left: 20px;
+            }
+
+        </style>
         <script></script>
     </head> 
     <body>
-        <a href="training.html">HTML 연습</a>
-        <a href="html_part1.html">자유주제</a>
-        <a href="html5.html">HTML5</a>
-        <a href="css.html">CSS</a>
-        <a href="layout1.html">layout1</a>
-        <a href="layout2.html">layout2</a>
-        <a href="layout3.html">layout3</a>
-        <a href="responsive.html">responsive</a>
-        <a href="layout4.html">layout4</a>
-        <!-- anchor -->
+        <header>
+            <a>
+                <a href="index.html"><img src="images/layout4_totoro.png"/></a>
+            </a>
+            <h2 class="float_left">
+                <div>INDEX</div><div>PAGE</div>
+            </h2>
+            <nav>
+                <ul>
+                    <li><a href="layout1.html">LAYOUT1</a></li>
+                    <li><a href="layout2.html">LAYOUT2</a></li>
+                    <li><a href="layout3.html">LAYOUT3</a></li>
+                    <li><a href="layout4.html">LAYOUT4</a></li>
+                    <div class="clear"></div>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="totoro">
+            <img src="images/index_image.png">
+        </div>
+
+        <footer>
+            <div id="footer_div">
+                <nav>
+                    <ul id="footer1">                 
+                        <li><a href="layout1.html">LAYOUT1</a></li>
+                        <li><a href="layout2.html">LAYOUT2</a></li>
+                        <li><a href="layout3.html">LAYOUT3</a></li>
+                        <li><a href="layout4.html">LAYOUT4</a></li>
+                        <li><a href="responsive.html">RESPONSIVE</a></li>
+                        <li><a href="training.html">TRAINING</a></li>
+                        <li><a href="html5.html">HTML5</a></li>
+                        <li><a href="html_part1.html">HTML_PART1</a></li>
+                        <li><a href="css.html">CSS</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+                <p>2019221031 KIM YEONA </br>Digital Publishing Disign</p>
+            </div> 
+        </footer>
     </body>
 </html>
