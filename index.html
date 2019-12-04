@@ -8,6 +8,9 @@
         <meta name="keywords" content="김연아" />
         <style>
             .clear {clear: both; height: 0; overflow: hidden;}
+            #warp{
+                position: fixed;
+            }
             body{
                 background-color: rgb(22, 157, 235);
                 padding: 0px;
@@ -26,9 +29,9 @@
             .float_left>div{
                 float: left;
                 position: relative;
-                top: 25px;
-                left: 12px;
-                font-size: 30px;
+                top: 20px;
+                left: 5px;
+                font-size: 20px;
             }
 
             .float_left>div:nth-child(2){
@@ -37,12 +40,12 @@
             header>nav{
                 float: right;
                 padding-top: 3px;
-                padding-right: 40px;
+                padding-right: 20px;
                 color: rgba(255, 255, 255, 0.801);
             }
             header>nav{
                 padding-top: 12px;
-                font-size: 20px;
+                font-size: 15px;
             }
             header>nav>ul>li{
                 float: left;
@@ -59,12 +62,8 @@
             #totoro{
                 float: right;
                 position: relative;
-                top: 100px;
-                left: 70px;
-            }
-
-            footer{
-                color: rgba(255, 255, 255, 0.801);
+                top: 90px;
+                left: 350px;
             }
             footer ul{
               padding: 0px;
@@ -83,22 +82,24 @@
             }
             footer>div>p{
                 padding: 10px;
-                line-height: 30px;
+                line-height: 20px;
             }
             footer{
                 float: left;
                 position: relative;
-                top: 115px;
+                top: 90px;
                 left: 20px;
+                font-size: 10px;
+                color: rgba(255, 255, 255, 0.801);
             }
 
         </style>
-        <script></script>
     </head> 
     <body>
+        <div id="warp">
         <header>
             <a>
-                <a href="index.html"><img src="images/layout4_totoro.png"/></a>
+                <a href="index.html"><img src="images/layout4_totoro.png" width="70%" height="70%"/></a>
             </a>
             <h2 class="float_left">
                 <div>INDEX</div><div>PAGE</div>
@@ -115,7 +116,7 @@
         </header>
 
         <div id="totoro">
-            <img src="images/index_image.png">
+            <img src="images/index_image.png" width="70%" height="70%">
         </div>
 
         <footer>
@@ -137,5 +138,6 @@
                 <p>2019221031 KIM YEONA </br>Digital Publishing Disign</p>
             </div> 
         </footer>
+    </div>
     </body>
 </html>
